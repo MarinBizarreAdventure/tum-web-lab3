@@ -120,7 +120,7 @@
         </div>
     </section>
 
-     <!-- Mobile Only Section: Quick Tips -->
+    <!-- Mobile Only Section: Quick Tips -->
     <section class="mobile-only-section">
         <div class="container">
             <h2 class="section-title">Quick Donation Tips</h2>
@@ -258,6 +258,72 @@
             </div>
         </div>
     </footer>
+
+    <!-- Money Duck Mascot SVG -->
+    <div class="mascot-container" id="mascot-container">
+        <div class="mascot-message" id="mascot-message">
+            <p>Quack! Wanna donate? I'll keep your money safe!</p>
+            <a href="#donation-options" class="mascot-btn">Donate Now</a>
+        </div>
+        <svg class="money-duck-mascot" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Duck Body -->
+            <ellipse cx="100" cy="120" rx="70" ry="60" fill="#FFEB3B" class="duck-body" />
+            <!-- Duck Head -->
+            <circle cx="150" cy="80" r="40" fill="#FFEB3B" class="duck-head" />
+            <!-- Duck Eye -->
+            <circle cx="165" cy="70" r="8" fill="white" />
+            <circle cx="168" cy="67" r="4" fill="black" />
+            <!-- Duck Bill -->
+            <path d="M190 85 C210 90, 210 100, 190 105 L175 95 Z" fill="#FF9800" class="duck-bill" />
+            <!-- Money Sign on Duck's Body -->
+            <text x="85" y="130" font-family="Arial" font-size="40" fill="#4CAF50" font-weight="bold">$</text>
+            <!-- Dollar sign on wing -->
+            <ellipse cx="60" cy="110" rx="20" ry="30" fill="#FFD600" class="duck-wing" />
+            <text x="50" y="120" font-family="Arial" font-size="25" fill="#4CAF50" font-weight="bold">$</text>
+        </svg>
+    </div>
+
+    <!-- Buy Me a Coffee Widget Script -->
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="marinnegai" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+    <!-- JavaScript for Mobile Menu and Mascot Interaction -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+        
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+        
+        // Mascot Interaction
+        const mascotContainer = document.getElementById('mascot-container');
+        const mascotMessage = document.getElementById('mascot-message');
+        
+        // Show mascot after delay
+        setTimeout(() => {
+            mascotContainer.classList.add('visible');
+        }, 2000);
+        
+        // Toggle message on hover/tap
+        mascotContainer.addEventListener('mouseenter', () => {
+            mascotMessage.classList.add('visible');
+        });
+        
+        mascotContainer.addEventListener('mouseleave', () => {
+            mascotMessage.classList.remove('visible');
+        });
+        
+        // For mobile (touch) - toggle on click
+        mascotContainer.addEventListener('click', () => {
+            mascotMessage.classList.toggle('visible');
+        });
+    </script>
 
 </body>
 
