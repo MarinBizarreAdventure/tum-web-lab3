@@ -27,11 +27,36 @@
             <li><a href="#donation-options">Donation Options</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
         </ul>
-        <div class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
+        <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
         </div>
     </div>
     </nav>
+    
+    <!-- Mobile Menu Overlay (mobile-only element) -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-close" id="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-donate">Why Donate</a></li>
+                <li><a href="#donation-options">Donation Options</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+            <!-- Mobile-only element: Quick donate buttons -->
+            <div class="mobile-quick-donate">
+                <h3>Quick Donate</h3>
+                <div class="mobile-donate-buttons">
+                    <a href="https://buymeacoffee.com/marinnegai" class="btn btn-mobile-donate">$3</a>
+                    <a href="https://buymeacoffee.com/marinnegai" class="btn btn-mobile-donate">$5</a>
+                    <a href="https://buymeacoffee.com/marinnegai" class="btn btn-mobile-donate">$10</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <sectiion id="home" class="hero">
