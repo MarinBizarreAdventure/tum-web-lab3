@@ -725,38 +725,36 @@ section{
     100% { transform: translateY(0); }
 }
 
-@keyframes wiggle {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
+@keyframes headBob {
+    0% { transform: rotate(-2deg) translateY(0); }
+    25% { transform: rotate(0deg) translateY(-2px); }
+    50% { transform: rotate(2deg) translateY(0); }
+    75% { transform: rotate(0deg) translateY(2px); }
+    100% { transform: rotate(-2deg) translateY(0); }
 }
 
-@keyframes billWiggle {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(3deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-3deg); }
-    100% { transform: rotate(0deg); }
+@keyframes wingFlap {
+    0% { transform: rotate(0deg) scaleY(1); }
+    50% { transform: rotate(-2deg) scaleY(0.97); }
+    100% { transform: rotate(0deg) scaleY(1); }
 }
 
 .money-duck-mascot {
-    animation: float 3s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
 }
 
 .duck-head {
-    animation: wiggle 4s ease-in-out infinite;
+    animation: headBob 3s ease-in-out infinite;
     transform-origin: center bottom;
 }
 
 .duck-bill {
-    animation: billWiggle 2s ease-in-out infinite;
+    /* Removed separate bill animation since bill is now part of head group */
     transform-origin: left center;
 }
 
 .duck-wing {
-    animation: wiggle 3s ease-in-out infinite;
+    animation: wingFlap 2s ease-in-out infinite;
     transform-origin: top center;
 }
 
@@ -813,8 +811,6 @@ section{
     background-color: var(--primary-color-hover);
     transform: translateY(-2px);
 }
-
-
 
 /* Responsive Design Media Queries */
 @media (max-width: 1200px) {
