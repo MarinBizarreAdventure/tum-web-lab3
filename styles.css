@@ -518,6 +518,8 @@ section{
     margin-bottom: 10px;
     position: relative;
     padding-left: 25px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .option-features li:before {
@@ -713,8 +715,8 @@ section{
 }
 
 .money-duck-mascot {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 120px;
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
 }
 
@@ -855,7 +857,7 @@ section{
     }
     
     .money-duck-mascot {
-        width: 80px;
+        width: 100px;
         height: 80px;
     }
 }
@@ -888,6 +890,15 @@ section{
     
     .hero h1 {
         font-size: 2.5rem;
+    }
+
+    .options-container {
+        grid-template-columns: 1fr;
+    }
+
+    .option-card.featured {
+    transform: scale(1);
+    order: -1; 
     }
     
     .hero {
