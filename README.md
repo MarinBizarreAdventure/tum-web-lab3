@@ -111,19 +111,19 @@ Visit the site here: [https://lab3.cashappreciated.com/](https://lab3.cashapprec
 
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
   <div style="width: 20%; margin-bottom: 20px;">
-    <img src="screenshots/lab3-desktop.png" alt="Desktop View" style="width: 100%;">
+    <img src="screenshots/lab3-desktop.png" alt="Desktop View" style="width: 20%;">
     <p><em>Desktop View</em></p>
   </div>
   <div style="width: 20%; margin-bottom: 20px;">
-    <img src="screenshots/lab3-mobile.png" alt="Mobile View" style="width: 100%;">
+    <img src="screenshots/lab3-mobile.png" alt="Mobile View" style="width: 20%;">
     <p><em>Mobile View</em></p>
   </div>
   <div style="width: 20%; margin-bottom: 20px;">
-    <img src="screenshots/lab3-mascot.png" alt="Duck Mascot" style="width: 100%;">
+    <img src="screenshots/lab3-mascot.png" alt="Duck Mascot" style="width: 20%;">
     <p><em>Duck Mascot with Message</em></p>
   </div>
   <div style="width: 20%; margin-bottom: 20px;">
-    <img src="screenshots/lab3-mobile-menu.png" alt="Mobile Menu" style="width: 100%;">
+    <img src="screenshots/lab3-mobile-menu.png" alt="Mobile Menu" style="width: 20%;">
     <p><em>Mobile Menu</em></p>
   </div>
 </div>
